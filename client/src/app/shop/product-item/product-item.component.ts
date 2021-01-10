@@ -1,4 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { IProduct } from 'src/app/shared/models/product';
 
 @Component({
@@ -8,6 +9,7 @@ import { IProduct } from 'src/app/shared/models/product';
 })
 export class ProductItemComponent implements OnInit {
   @Input() product: IProduct;
+
 
   constructor() { }
 
